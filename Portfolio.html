@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruthvik K | Portfolio</title>
+<style>
+.profile-pic{width:180px;height:180px;border-radius:50%;object-fit:cover;margin-top:20px;border:4px solid teal;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;scroll-behavior:smooth}
+body{background:floralwhite;color:midnightblue}
+nav{position:fixed;width:100%;top:0;display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:white;border-bottom:1px solid lightgray;z-index:1000}
+nav h2{color:teal}
+nav ul{list-style:none;display:flex;gap:30px}
+nav ul li a{text-decoration:none;color:gray;transition:.3s}
+nav ul li a:hover{color:teal}
+.resume-btn{padding:8px 18px;border:1px solid teal;border-radius:8px;color:teal;text-decoration:none;transition:.3s}
+.resume-btn:hover{background:teal;color:white}
+section{padding:100px 8%}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding-top:80px}
+.hero h1{font-size:60px;color:midnightblue}
+.hero span{color:teal}
+.hero p{margin-top:20px;color:gray;max-width:600px}
+.hero-buttons{margin-top:30px}
+.btn{padding:12px 25px;border-radius:8px;text-decoration:none;margin:10px;display:inline-block;transition:.3s}
+.primary{background:teal;color:white}
+.secondary{border:1px solid teal;color:teal}
+.secondary:hover{background:teal;color:white}
+.section-title{font-size:35px;margin-bottom:40px;border-bottom:2px solid lightgray;padding-bottom:10px;color:midnightblue}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.card{background:white;padding:25px;border-radius:15px;border:1px solid lightgray;transition:.3s;box-shadow:0 5px 15px rgba(0,0,0,0.05)}
+.card:hover{transform:translateY(-5px);border-color:teal}
+.card h3{margin-bottom:10px;color:midnightblue}
+.card p{color:dimgray;margin-bottom:10px}
+.tag{display:inline-block;padding:5px 10px;background:lightcyan;color:teal;border-radius:20px;font-size:12px;margin:5px 5px 0 0}
+.contact{text-align:center}
+.contact p{margin:10px 0;color:dimgray}
+footer{text-align:center;padding:20px;border-top:1px solid lightgray;color:gray}
+@media(max-width:768px){
+.hero h1{font-size:40px}
+nav ul{display:none}
+}
+.card img {max-width: 100%;height: auto;display: block;margin-top: 10px;border-radius: 10px;}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>RK</h2>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+<a href="#resume" class="resume-btn">Resume</a>
+</nav>
+
+<section class="hero" id="home">
+<h1>Ruthvik <span>K</span></h1>
+<img src="images\Profile Picture.jpeg" alt="Ruthvik K" class="profile-pic">
+<p>AI & Machine Learning Engineer crafting intelligent solutions at the intersection of Artificial Intelligence and User Experience Design.</p>
+<div class="hero-buttons">
+<a href="#projects" class="btn primary">View My Work</a>
+<a href="#resume" class="btn secondary">Download Resume</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">Career Objective</h2>
+<div class="grid">
+<div class="card">
+<p>Tech enthusiast with skills in Python,Java, Data analysis, and machine learning, focused on applying technical knowledge to build data-driven solutions and continuously developing expertise in AI technologies.
+</div>
+<div class="card">
+<h3>Education</h3>
+<p>B.E in Artificial Intelligence & Machine Learning</p>
+<p>SJB Institute of Technology (2022–2026)</p>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<h2 class="section-title">Experience</h2>
+<div class="card">
+<h3>AI Developer Intern(Ongoing)</h3>
+<p>Working on learning skillsets of AI such as Python programming,Data Augmentation using python and packages such as numpy,pandas, matplotlib,seaborn,etc.<br>Future work includes 2 mini projects and 2 major projects.</p>
+<h4>Full Stack JAVA Intern(Ongoing)</h4>
+<p>Learning skillsets in full stack development which includes frontend skills like HTML, CSS and JavaScript along with backend skills like JAVA programming language and IDEs like Springboot and VS Code.<br>Future work includes 2 mini projects and 2 major projects</p>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="card">
+<span class="tag">Python</span>
+<span class="tag">JAVA</span>
+<span class="tag">Machine Learning</span>
+<span class="tag">Deep Learning</span>
+<span class="tag">Data Science</span>
+<span class="tag">SQL</span>
+<span class="tag">UI/UX</span>
+<span class="tag">HTML/CSS</span>
+<span class="tag">Generative AI</span>
+<span class="tag">Cloud</span>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+<div class="grid">
+<div class="card">
+<h3>WiFi Controlled Talking Robot</h3>
+<p>Interactive robot controlled via WiFi for device movements and Bluetooth connectivity for audio interaction</p>
+<span class="tag">IoT</span>
+<span class="tag">C language</span>
+<span class="tag">Bluetooth for speaker connection</span>
+</div>
+
+<div class="card">
+<h3>Tracque</h3>
+<p>Innovative AI-based multimodal attendance system with student performance prediction analysis</p>
+<span class="tag">3 modes of attendance logging (Facial recognition,Fingrerprint and Barcode Scanning)</span>
+<span class="tag">LBPH and Open CV for facial recognition </span>
+<span class="tag">Fingerprint scanner with ESP32 Microcontroller for Fingerprint recognition</span>
+<span class="tag">Opensource ZXing library for Barcode scanning</span>
+<img src="images\TracQue Enrolling page.PNG" alt="Enrolling Page Screenshot" class="enrollpage-image">
+<img src="images\TracQue Homepage.PNG" alt="Homepage Screenshot" class="homepage-image">
+</div>
+
+<div class="card">
+<h3>Calories Burnt Prediction</h3>
+<p>Machine learning model predicting calories burned using health parameters.</p>
+<span class="tag">Machine Learning</span>
+<span class="tag">Python</span>
+<img src="images\Mini project visualization.PNG" alt="Visualization Screenshot" class="visualization-image">
+<img src="images\Mini project final result.PNG" alt="Final Result Screenshot" class="finalresult-image">
+</div>
+</div>
+</section>
+
+<section id="resume">
+<h2 class="section-title">Resume</h2>
+<div class="card">
+<a href="1JB22AI046 _ RUTHVIK K_ RESUME.pdf">Click Here for Resume</a>
+<p>Contact me for a copy.<b>Details Mentioned.</b></p>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Let's Connect</h2>
+<div class="contact">
+<p>Email: <a href="mailto:ruthvik218@gmail.com">ruthvik218@gmail.com</a></p>
+<p>Github: <a href="https://github.com/RK218" target="_blank" rel="noopener">https://github.com/RK218</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/ruthvik-k-21082k4" target="_blank" rel="noopener">www.linkedin.com/in/ruthvik-k-21082k4</a></p>
+</div>
+</section>
+</body>
+</html>
